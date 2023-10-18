@@ -9,28 +9,23 @@ var symbol = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
 
 function generatePassword() {
-  var password = [
-    upperCase[Math.floor(Math.random() * upperCase.length)],
-    lowerCase[Math.floor(Math.random() * lowerCase.length)],
-    number[Math.floor(Math.random() * number.length)],
-    symbol[Math.floor(Math.random() * symbol.length)]
-  ].join('');
-
   var allChars = upperCase + lowerCase + number + symbol;
 
-  for (var i = password.length; i < length; i++) {
-    
+  var password = "";
+
+  for (var i = 0; i < length; i++) {
+    password += allChars[Math.floor(Math.random() * allChars.length)];
   }
+  return password;
 }
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+var generateBtn = document.querySelector("#generate");
