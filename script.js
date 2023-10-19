@@ -16,9 +16,9 @@ function generatePassword() {
 
   // Itirating through each character and randomizing the outcome with Math.random
   for (var i = 0; i < length; i++) {
-    password += allChars[Math.floor(Math.random() * allChars)];
-    return password;
+    password += allChars[Math.floor(Math.random() * allChars.length)];
   }
+  return password;
 }
 
 // Write password to the #password input
@@ -26,7 +26,6 @@ function writePassword() {
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
 }
