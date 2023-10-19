@@ -7,18 +7,21 @@ var upperCase = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 var letters = [1,2,3,4,5,6,7,8,9,0];
 var symbols = ["!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"];
 
-// Write password to the #password input
-function writePassword() {
+function generatePassword() {
 
-  // Combining all characters to one variable
-  allChars = lowerCase + upperCase + letters + symbols;
-  password = "";
-
+    // Combining all characters to one variable
+    allChars = lowerCase + upperCase + letters + symbols;
+    password = "";
+    
   // Itirating through each character and randomizing the outcome with Math.random
   for (var i = 0; i < length; i++) {
     password += allChars[Math.floor(Math.random() * allChars)];
     return password;
   }
+}
+
+// Write password to the #password input
+function writePassword() {
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
