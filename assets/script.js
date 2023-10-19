@@ -1,18 +1,19 @@
 // Assignment Code
+var length = 12;
 var generateBtn = document.querySelector("#generate");
 
 // Character setup
-var lowerCase = ["A","B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var upperCase = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var letters = [1,2,3,4,5,6,7,8,9,0];
-var symbols = ["!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"];
+var lowerCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var upperCase = "abcdefghijklmnopqrstuvwxyz";
+var letters = "1234567890";
+var symbols = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
 function generatePassword() {
 
     // Combining all characters to one variable
-    allChars = lowerCase + upperCase + letters + symbols;
+    var allChars = lowerCase + upperCase + letters + symbols;
     password = "";
-    
+
   // Itirating through each character and randomizing the outcome with Math.random
   for (var i = 0; i < length; i++) {
     password += allChars[Math.floor(Math.random() * allChars)];
