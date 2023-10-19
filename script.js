@@ -12,7 +12,7 @@ function generatePassword() {
 
     // Combining all characters to one variable
     var allChars = lowerCase + upperCase + letters + symbols;
-    password = "";
+    var password = "";
 
   // Itirating through each character and randomizing the outcome with Math.random
   for (var i = 0; i < length; i++) {
