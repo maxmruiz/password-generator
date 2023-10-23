@@ -14,4 +14,4 @@ Then to create a random password using those characters, I found the most effici
 ![Screenshot of the website with a randomly generated password, showcasing its function.](./assets/images/SC.png)
 
 ## Link
-If you would like to visit the website and try it out yourself, [visit this link here].
+If you would like to visit the website and try it out yourself, [visit this link here](https://maxmruiz.github.io/password-generator/).
