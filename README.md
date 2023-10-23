@@ -6,4 +6,10 @@ Multiple people have tons of accounts, and a large portion of those people have 
 
 ## Usage
 This website was created using HTML, CSS, and JavaScript. How it works is that once the user clicks the 
-"Generate Password" button, a random password using a combination of letters (uppercase and lowercase), numbers, and symbols in random order with a 12 character length. To make this work, you first have to determine what makes a strong password, *strong*. This includes letters both uppercase and lowercase, numbers ranging from 0-9, and the following symbols: `!#$%&'()*+,-./:;<=>?@[\]^_`{|}~`.
+"Generate Password" button, a random password using a combination of letters (uppercase and lowercase), numbers, and symbols in random order with a 12 character length. To make this work, you first have to determine what makes a strong password, *strong*. This includes letters both uppercase and lowercase, numbers ranging from 0-9, and the following symbols: `!#$%&'()*+,-./:;<=>?@[\]^_`{|}~`. Then to create a random password using those characters, I found the most efficient way to do it was to combine all characters into one variable then iterating through variable creating a random sequence of characters using Math.random. Which then displays to user what password was generated so they can copy and use it as they please.
+
+## Images 
+![Screenshot of the website with a randomly generated password, showcasing its function.](./assets/images/SC.png)
+
+## Link
+If you would like to visit the website and try it out yourself, [visit this link here].
