@@ -12,39 +12,43 @@
 
     <div class="container">
 
-      <h1>Generate a Password</h1>
-
       <div class="wrapper">
-        <input type="text" readonly placeholder="Generated Password"/>
-        <button id="copy"><i class="bi bi-copy"></i></button>
+
+        <h1>Password Generator</h1>
+
+        
+        <div class="generated-pass">
+          <input type="text" readonly placeholder="Generated Password"/>
+          <button id="copy"><i class="bi bi-copy"></i></button>
+        </div>
+
+          <label class="attr">
+            <span>Length: </span>
+            <input type="number" id="length" value="12" />
+          </label>
+    
+          <label class="attr">
+            <span>Uppercase letters: </span>
+            <input type="checkbox" id="uppercase" checked />
+          </label>
+    
+          <label class="attr">
+            <span>Lowercase letters: </span>
+            <input type="checkbox" id="lowercase" checked />
+          </label>
+    
+          <label class="attr">
+            <span>Symbols: </span>
+            <input type="checkbox" id="symbols" checked />
+          </label>
+    
+          <label class="attr">
+            <span>Numbers: </span>
+            <input type="checkbox" id="numbers" checked />
+          </label>
+    
+          <button type="submit" id="generate">Generate Password</button>
       </div>
-
-      <label class="attr">
-        <span>Length: </span>
-        <input type="number" id="length" value="12" />
-      </label>
-
-      <label class="attr">
-        <span>Uppercase letters: </span>
-        <input type="checkbox" id="uppercase" checked />
-      </label>
-
-      <label class="attr">
-        <span>Lowercase letters: </span>
-        <input type="checkbox" id="lowercase" checked />
-      </label>
-
-      <label class="attr">
-        <span>Symbols: </span>
-        <input type="checkbox" id="symbols" checked />
-      </label>
-
-      <label class="attr">
-        <span>Numbers: </span>
-        <input type="checkbox" id="numbers" checked />
-      </label>
-
-      <button type="submit" id="generate">Generate Password</button>
 
     </div>
 
